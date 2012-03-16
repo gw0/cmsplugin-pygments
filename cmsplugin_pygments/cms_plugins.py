@@ -8,6 +8,9 @@ from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
 from models import PygmentsPlugin
 
+from django.conf import settings
+
+
 class CMSPygmentsPlugin(CMSPluginBase):
     model = PygmentsPlugin
     name = _("Pygments")
@@ -27,6 +30,6 @@ class CMSPygmentsPlugin(CMSPluginBase):
         return context
 
     def icon_src(self, instance):
-        return setings.STATIC_URL + u"images/pygments.png"
+        return settings.STATIC_URL + u"images/pygments.png"
 
 plugin_pool.register_plugin(CMSPygmentsPlugin)
