@@ -30,6 +30,6 @@ class CMSPygmentsPlugin(CMSPluginBase):
         return context
 
     def icon_src(self, instance):
-        return settings.STATIC_URL + u"images/pygments.png"
+        return settings.STATIC_URL + u"cmsplugin-pygments/pygments.png"
 
 plugin_pool.register_plugin(CMSPygmentsPlugin)
