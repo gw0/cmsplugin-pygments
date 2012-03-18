@@ -1,1 +1,2 @@
 recursive-include cmsplugin_pygments/templates *
+recursive-include cmsplugin_pygments/images *
